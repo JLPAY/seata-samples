@@ -16,7 +16,7 @@ public class BusinessController {
 
     /**
      * 购买下单，模拟全局事务提交
-     *
+     *http://10.150.125.28:8084/api/business/purchase/commit
      * @return
      */
     @RequestMapping("/purchase/commit")
@@ -27,7 +27,7 @@ public class BusinessController {
 
     /**
      * 购买下单，模拟全局事务回滚
-     *
+     *http://10.150.125.28:8084/api/business/purchase/rollback
      * @return
      */
     @RequestMapping("/purchase/rollback")

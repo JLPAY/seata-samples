@@ -19,10 +19,12 @@ public class AccountService {
         Account account = accountMapper.selectByUserId(userId);
         account.setMoney(account.getMoney().subtract(num));
         accountMapper.updateById(account);
-
+        /**
         if (ERROR_USER_ID.equals(userId)) {
             throw new RuntimeException("account branch exception");
         }
+         **/
+
     }
 
 }
